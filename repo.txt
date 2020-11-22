@@ -1,0 +1,279 @@
+sazaharv@SAZAHARV-M-N4QZ Desktop % cd basic_repo 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % touch  repo.txt
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % touch index.html
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % git init
+Initialized empty Git repository in /Users/sazaharv/Desktop/basic_repo/.git/
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % git add repo.txt
+sazaharv@SAZAHARV-M-N4QZ basic_repo % git add index.html 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % git commit 
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'sazaharv@SAZAHARV-M-N4QZ.(none)')
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo %  ls -l 
+total 0
+-rw-r--r--  1 sazaharv  staff  0 Nov 22 02:26 index.html
+-rw-r--r--  1 sazaharv  staff  0 Nov 22 02:22 repo.txt
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % git remote add origin https://github.com/sazaharv/basic_repo.git
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/sazaharv/basic_repo.git'
+sazaharv@SAZAHARV-M-N4QZ basic_repo % git push              
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % git branch -M main 
+error: refname refs/heads/master not found
+fatal: Branch rename failed
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % git push mastr origin 
+error: src refspec origin does not match any
+error: failed to push some refs to 'mastr'
+sazaharv@SAZAHARV-M-N4QZ basic_repo % git push master origin 
+error: src refspec origin does not match any
+error: failed to push some refs to 'master'
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/sazaharv/basic_repo.git'
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/sazaharv/basic_repo.git
+git push -u origin main
+Reinitialized existing Git repository in /Users/sazaharv/Desktop/basic_repo/.git/
+fatal: pathspec 'README.md' did not match any files
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'sazaharv@SAZAHARV-M-N4QZ.(none)')
+error: refname refs/heads/master not found
+fatal: Branch rename failed
+fatal: remote origin already exists.
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/sazaharv/basic_repo.git'
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % git remote add origin https://github.com/sazaharv/basic_repo.git
+git branch -M main
+git push -u origin main
+fatal: remote origin already exists.
+error: refname refs/heads/master not found
+fatal: Branch rename failed
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/sazaharv/basic_repo.git'
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % git remote add origin https://github.com/sazaharv/basic_repo.git
+fatal: remote origin already exists.
+sazaharv@SAZAHARV-M-N4QZ basic_repo % git branch -M main
+error: refname refs/heads/master not found
+fatal: Branch rename failed
+sazaharv@SAZAHARV-M-N4QZ basic_repo % git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/sazaharv/basic_repo.git'
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % git log
+fatal: your current branch 'master' does not have any commits yet
+sazaharv@SAZAHARV-M-N4QZ basic_repo % git commit
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'sazaharv@SAZAHARV-M-N4QZ.(none)')
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % git config --global sazaharv.sazaharv@cisco.com 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % git commit             
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'sazaharv@SAZAHARV-M-N4QZ.(none)')
+sazaharv@SAZAHARV-M-N4QZ basic_repo % git comfig sazaharv@cisco.com
+git: 'comfig' is not a git command. See 'git --help'.
+
+The most similar command is
+	config
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % git commit
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'sazaharv@SAZAHARV-M-N4QZ.(none)')
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % git remote add origin https://github.com/sazaharv/basic_repo.git
+fatal: remote origin already exists.
+sazaharv@SAZAHARV-M-N4QZ basic_repo % git remote add origin https://github.com/sazaharv/basic_repo.git
+fatal: remote origin already exists.
+sazaharv@SAZAHARV-M-N4QZ basic_repo % git commit                                                      
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'sazaharv@SAZAHARV-M-N4QZ.(none)')
+sazaharv@SAZAHARV-M-N4QZ basic_repo % git push -u origin main                                         
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/sazaharv/basic_repo.git'
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % nano ~/.gitconfig
+sazaharv@SAZAHARV-M-N4QZ basic_repo % git config --global -l
+fatal: unable to read config file '/Users/sazaharv/.gitconfig': No such file or directory
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % git config --global user.email sazaharv@cisco.com 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % git commit
+hint: Waiting for your editor to close the file... error: There was a problem with the editor 'vi'.
+Please supply the message using either -m or -F option.
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % git commit
+Aborting commit due to empty commit message.
+sazaharv@SAZAHARV-M-N4QZ basic_repo % git commit -m  "mi primer commit"
+[master (root-commit) 1c921a5] mi primer commit
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+ create mode 100644 repo.txt
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % git push -u origin main                          
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/sazaharv/basic_repo.git'
+sazaharv@SAZAHARV-M-N4QZ basic_repo % git push               
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+sazaharv@SAZAHARV-M-N4QZ basic_repo % git push - u 
+error: src refspec u does not match any
+error: failed to push some refs to '-'
+sazaharv@SAZAHARV-M-N4QZ basic_repo % git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/sazaharv/basic_repo.git'
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % git status
+On branch master
+nothing to commit, working tree clean
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
+sazaharv@SAZAHARV-M-N4QZ basic_repo % git push origin master
+Username for 'https://github.com': sazaharv
+Password for 'https://sazaharv@github.com': 
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 235 bytes | 235.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/sazaharv/basic_repo.git
+ * [new branch]      master -> master
+sazaharv@SAZAHARV-M-N4QZ basic_repo % 
